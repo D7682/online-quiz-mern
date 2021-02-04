@@ -31,7 +31,6 @@ db.mongoose
           if (err) {
             console.log("error", err);
           }
-  
           console.log("added 'user' to roles collection");
         });
   
@@ -41,7 +40,6 @@ db.mongoose
           if (err) {
             console.log("error", err);
           }
-  
           console.log("added 'moderator' to roles collection");
         });
   
