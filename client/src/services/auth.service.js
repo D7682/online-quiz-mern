@@ -33,9 +33,11 @@ const getCurrentUser = () => {
   return JSON.parse(localStorage.getItem("user"));
 };
 
-export default {
+const names = {
   register,
   login,
   logout,
   getCurrentUser,
 };
+
+export default names;

@@ -1,8 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
+import CheckButton from "react-validation/build/button";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
-import CheckButton from "react-validation/build/button";
 import AuthService from "../services/auth.service";
+// console.log(AuthService);
 
 const required = (value) => {
   if (!value) {
@@ -64,6 +65,7 @@ const Login = (props) => {
     }
   };
 
+  
   return (
     <div className="col-md-12">
       <div className="card card-container">
