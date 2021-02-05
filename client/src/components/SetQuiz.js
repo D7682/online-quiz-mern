@@ -10,7 +10,6 @@ const SetQuiz = () => {
     const [two, setTwo] = useState('')
     const [three, setThree] = useState('')
     const [four, setFour] = useState('')
-    // const [subjectCode, setSubjectCode] = useState(null);
 
     const setQuestion = ()=>{
         return(
@@ -45,30 +44,25 @@ const SetQuiz = () => {
         )
     }
 
+
+    const questions = [];
+
     const addnew = ()=>{
         setTotal(total + 1);
     }
     
-        useEffect(() => {
-            questions.title = title;
-            questions.subjectCode = subjectCode;
-            questions.singleQuestion = singleQuestion;
-            questions.answer = {one, two, three, four};
-            // questions.answers[1] = two;
-            // questions.answers[2] = three;
-            // questions.answers[3] = four;
-            // console.log(questions, "questions");
-            // return () => {
-            //     cleanup
-            // }
-        }, [title, one, two, three, four, total , subjectCode, singleQuestion])
+    useEffect(() => {
+        questions.title = title;
+        questions.subjectCode = subjectCode;
+        questions.singleQuestion = singleQuestion;
+        questions.answer = {one, two, three, four};
+    }, [title, one, two, three, four, total , subjectCode, singleQuestion])
     
     const onFormSubmit = (e) =>{
         e.preventDefault();
         console.log(questions);
     }
 
-    const questions = [];
 
     return (
         <div>
