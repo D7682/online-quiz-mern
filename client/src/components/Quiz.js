@@ -1,5 +1,5 @@
-import React,{useState} from 'react'
-import './quiz.css'
+import React, { useState } from 'react';
+import './quiz.css';
 
 const Quiz = () => {
     const questions = [
@@ -39,7 +39,7 @@ const Quiz = () => {
 				{ answerText: '7', isCorrect: true },
 			],
 		},
-		{
+		{	
 			questionText: 'What is your name?',
 			answerOptions: [
 				{ answerText: 'saikat', isCorrect: true },
