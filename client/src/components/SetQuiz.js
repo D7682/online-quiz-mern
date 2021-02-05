@@ -11,6 +11,8 @@ const SetQuiz = () => {
     const [questions, setQuestions] = useState([
         {},
         {},
+        {},
+        {},
         {}
     ])
 

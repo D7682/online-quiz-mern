@@ -14,8 +14,8 @@ const MultipleSection = ({total}) => {
             <div>
             <div className="form-group">
                 <label htmlFor="inputGroupSelect01"></label>
-                <select className="custom-select" id="inputGroupSelect01">
-                    <option >Choose...</option>
+                <select defaultValue="choose..." className="custom-select" id="inputGroupSelect01">
+                    <option value="choose...">Choose...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
