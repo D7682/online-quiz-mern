@@ -12,6 +12,8 @@ import Profile from "./components/Profile";
 import BoardUser from "./components/BoardUser";
 import BoardModerator from "./components/BoardModerator";
 import BoardAdmin from "./components/BoardAdmin";
+import Quiz from "./components/Quiz";
+import SetQuiz from "./components/SetQuiz";
 
 const App = () => {
   const [showModeratorBoard, setShowModeratorBoard] = useState(false);
@@ -36,7 +38,7 @@ const App = () => {
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <Link to={"/"} className="navbar-brand">
-          bezKoder
+          quiz app;
         </Link>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
@@ -96,6 +98,17 @@ const App = () => {
                 Sign Up
               </Link>
             </li>
+            {/* have to change it from here. */}
+            <li className="nav-item">
+              <Link to={"/quiz"} className="nav-link">
+                Quiz test
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to={"/setquiz"} className="nav-link">
+                Set Quiz
+              </Link>
+            </li>
           </div>
         )}
       </nav>
@@ -106,6 +119,8 @@ const App = () => {
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/profile" component={Profile} />
+          <Route exact path="/quiz" component={Quiz} />
+          <Route exact path="/setquiz" component={SetQuiz} />
           <Route path="/user" component={BoardUser} />
           <Route path="/mod" component={BoardModerator} />
           <Route path="/admin" component={BoardAdmin} />
